@@ -20,7 +20,7 @@ public class Character : KinematicBody2D
 	{
 	}
 	
-	public void GetInput()
+	public void GetMovementInput()
 	{	
 		MoveRight = Input.IsActionPressed("ui_right");
 		MoveLeft = Input.IsActionPressed("ui_left");
@@ -85,10 +85,26 @@ public class Character : KinematicBody2D
 		}
 	}
 	
+	
+	public void GetInteractionInput()
+	{
+		if(Input.IsActionPressed("left_mouse_click"))
+		{
+			//CanvasItem.get_global_mouse_position();
+			//Fire out an event with the pos?
+		}
+		
+		if(Input.IsActionPressed("right_mouse_click"))
+		{
+			//Like place
+		}
+	}
+	
   // Tick
   	public override void _Process(float delta)
   	{
-		GetInput();
+		GetMovementInput();
+		GetInteractionInput();
 		MoveAndCollide(MovementVelocity * delta);
   	}
 }
