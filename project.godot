@@ -19,6 +19,11 @@ config/name="Star"
 run/main_scene="res://Scenes/GameWorld.tscn"
 config/icon="res://icon.png"
 
+[display]
+
+window/stretch/mode="viewport"
+window/stretch/aspect="keep"
+
 [input]
 
 ui_left={
