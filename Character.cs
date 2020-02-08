@@ -3,9 +3,9 @@ using System;
 
 public class Character : KinematicBody2D
 {
-	public int MaxSpeed = 300;
-	public int Acceleration = 10;
-	public int Drag = 10;
+	public int MaxSpeed = 250;
+	public int Acceleration = 5;
+	public int Drag = 5;
 	
 	private Vector2 MovementVelocity = new Vector2();
 	
@@ -90,13 +90,12 @@ public class Character : KinematicBody2D
 	{
 		if(Input.IsActionPressed("left_mouse_click"))
 		{
-			//CanvasItem.get_global_mouse_position();
-			//Fire out an event with the pos?
+			GetTree().CallGroup("Inputs", "OnLeftMouseClick"); //Calls the function in text here
 		}
 		
 		if(Input.IsActionPressed("right_mouse_click"))
 		{
-			//Like place
+			GetTree().CallGroup("Inputs", "OnRightMouseClick");
 		}
 	}
 	
