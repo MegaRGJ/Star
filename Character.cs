@@ -10,14 +10,16 @@ public class Character : KinematicBody2D
 	private Vector2 MovementVelocity = new Vector2();
 	
 	//Make getters later
-	private bool MoveRight = false;
-	private bool MoveLeft = false;
-	private bool MoveUp = false;
-	private bool MoveDown = false;
+	public bool MoveRight = false;
+	public bool MoveLeft = false;
+	public bool MoveUp = false;
+	public bool MoveDown = false;
 	
+	private AnimationPlayer AnimPlayer;
 	// BeginPlay
 	public override void _Ready()
 	{
+		AnimPlayer = GetNode<AnimationPlayer>("AnimationPlayer");
 	}
 	
 	public void GetMovementInput()
