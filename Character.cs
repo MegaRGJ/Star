@@ -15,11 +15,9 @@ public class Character : KinematicBody2D
 	public bool MoveUp = false;
 	public bool MoveDown = false;
 	
-	private AnimationPlayer AnimPlayer;
 	// BeginPlay
 	public override void _Ready()
 	{
-		//AnimPlayer = GetNode<AnimationPlayer>("AnimationPlayer");
 	}
 	
 	public void GetMovementInput()

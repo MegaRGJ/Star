@@ -23,7 +23,7 @@ public class SunPotManager : Node2D
 		
 		Physics2DShapeQueryParameters Parameters = new Physics2DShapeQueryParameters();
 		RectangleShape2D Shape = new RectangleShape2D();
-		Shape.Extents = new Vector2(28,28); // Don't hate me.
+		Shape.Extents = new Vector2(16,16); // Don't hate me.
 		Parameters.SetShape(Shape);
 		Parameters.Transform = new Transform2D(0.0f, MousePos);
 
