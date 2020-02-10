@@ -24,6 +24,10 @@ config/icon="res://icon.png"
 window/stretch/mode="viewport"
 window/stretch/aspect="keep"
 
+[editor_plugins]
+
+enabled=PoolStringArray( "MonoDebuggerQM-master" )
+
 [input]
 
 ui_left={
@@ -64,6 +68,15 @@ right_mouse_click={
 "events": [ Object(InputEventMouseButton,"resource_local_to_scene":false,"resource_name":"","device":0,"alt":false,"shift":false,"control":false,"meta":false,"command":false,"button_mask":0,"position":Vector2( 0, 0 ),"global_position":Vector2( 0, 0 ),"factor":1.0,"button_index":2,"pressed":false,"doubleclick":false,"script":null)
  ]
 }
+
+[logging]
+
+file_logging/enable_file_logging=true
+
+[mono]
+
+debugger_agent/wait_for_debugger=true
+project/auto_update_project=false
 
 [rendering]
 

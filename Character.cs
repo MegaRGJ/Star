@@ -19,7 +19,7 @@ public class Character : KinematicBody2D
 	// BeginPlay
 	public override void _Ready()
 	{
-		AnimPlayer = GetNode<AnimationPlayer>("AnimationPlayer");
+		//AnimPlayer = GetNode<AnimationPlayer>("AnimationPlayer");
 	}
 	
 	public void GetMovementInput()

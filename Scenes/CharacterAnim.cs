@@ -11,8 +11,6 @@ public class CharacterAnim : Sprite
 		CharacterInput = (Character)GetParent();
 		Player = GetNode<AnimationPlayer>("AnimationPlayer");
 		Player.Play("Idle");
-		
-		//CharacterInput = GetNode<Character>("Character");
 	}
 
   public override void _Process(float delta)
